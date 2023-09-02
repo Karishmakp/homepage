@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header123 from "./components/Header123";
+import Products from "./components/Products";
+import Slider1 from "./components/Slider1";
+import Savingcard from "./components/Savingcard";
+import ShopUs from "./components/ShopUs";
+import GIfts from "./components/GIfts";
+import ContactUs from "./components/ContactUs";
+import FooterG from "./components/FooterG";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    // media:{mobile:"768px" , tab:"998px"}
+    return (
+      <div className="App">
+        <Header123 />
+        <Slider1 />
+        <Products />
+        <Savingcard />
+        <ShopUs />
+        <GIfts />
+        <ContactUs />
+
+        <FooterG />
+        {/* <Testmonial/> */}
+      </div>
+    );
+  }
 }
-
-export default App;

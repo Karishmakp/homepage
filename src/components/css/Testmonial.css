@@ -1,0 +1,19 @@
+/* 
+.carousel-control-prev :disabled{
+
+}
+.carousel-control-next :disabled{
+
+} */
+
+.carousel-control-prev-icon :disabled{
+    
+    margin-left: -0px;
+    border: 1px solid black;
+    background-color: red;
+}
+.carousel-control-next-icon  :disabled{
+    margin-right: 0px;
+    background-color: red;
+}
+
